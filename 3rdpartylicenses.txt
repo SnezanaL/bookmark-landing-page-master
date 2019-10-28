@@ -70,8 +70,6 @@ THE SOFTWARE.
 
 @angular/material/expansion
 
-@angular/material/form-field
-
 @angular/material/tabs
 
 @angular/material/tooltip

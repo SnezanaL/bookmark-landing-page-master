@@ -1,5 +1,4 @@
-{
-  "faqs":[
+[
   {
   "Id": 1, 
   "question": "What is Bookmark?",
@@ -25,4 +24,3 @@
   "answer": "Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non ut velit."
   }
 ]
-}

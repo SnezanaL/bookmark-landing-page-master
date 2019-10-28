@@ -1,0 +1,213 @@
+@import '~@angular/material/theming';
+@include mat-core();
+
+/* ======== Angular material custom themes ======== */  
+
+/* For use in src/lib/core/theming/_palette.scss */
+/* For use in src/lib/core/theming/_palette.scss */
+$md-primary: (
+  50 : #ffffff,
+  100 : #f1f3fc,
+  200 : #c2c9f4,
+  300 : #8694e9,
+  400 : #6c7ee4,
+  500 : #5267df,
+  600 : #3850da,
+  700 : #263fce,
+  800 : #2137b4,
+  900 : #1d2f9a,
+  A100 : #ffffff,
+  A200 : #cbd3ff,
+  A400 : #7185f3,
+  A700 : #6377e7,
+  contrast: (
+      50 : #000000,
+      100 : #000000,
+      200 : #000000,
+      300 : #000000,
+      400 : #000000,
+      500 : #ffffff,
+      600 : #ffffff,
+      700 : #ffffff,
+      800 : #ffffff,
+      900 : #ffffff,
+      A100 : #000000,
+      A200 : #000000,
+      A400 : #000000,
+      A700 : #ffffff,
+  )
+);
+
+
+
+
+$md-grayishblue: (
+    50 : #ffffff,
+    100 : #f6f6f8,
+    200 : #d8d9de,
+    300 : #b1b3bd,
+    400 : #a1a3af,
+    500 : #9093a1,
+    600 : #7f8393,
+    700 : #707384,
+    800 : #626573,
+    900 : #545663,
+    A100 : #ffffff,
+    A200 : #dbdfef,
+    A400 : #a0a6c4,
+    A700 : #999eb1,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #ffffff,
+        600 : #000000,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+$md-warn: (
+    50 : #ffffff,
+    100 : #ffffff,
+    200 : #fed6d6,
+    300 : #fb9191,
+    400 : #fa7474,
+    500 : #f95656,
+    600 : #f83838,
+    700 : #f71b1b,
+    800 : #eb0808,
+    900 : #cd0707,
+    A100 : #ffffff,
+    A200 : #ffe9e9,
+    A400 : #ff8383,
+    A700 : #fe6b6b,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+  );
+
+$md-verydarkblue: (
+    50 : #a3acd0,
+    100 : #717fb6,
+    200 : #51619e,
+    300 : #39446e,
+    400 : #2e375a,
+    500 : #242b46,
+    600 : #1a1f32,
+    700 : #0f121e,
+    800 : #050609,
+    900 : #000000,
+    A100 : #8699e3,
+    A200 : #3454cf,
+    A400 : #2a3973,
+    A700 : #29335a,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #ffffff,
+        300 : #ffffff,
+        400 : #ffffff,
+        500 : #000000,
+        600 : #ffffff,
+        700 : #ffffff,
+        800 : #ffffff,
+        900 : #ffffff,
+        A100 : #000000,
+        A200 : #ffffff,
+        A400 : #ffffff,
+        A700 : #ffffff,
+    )
+);
+
+
+
+
+// mandatory stuff for theming
+$md-palette-primary: mat-palette($md-primary);
+$md-palette-warn: mat-palette($md-warn);
+
+$my-custom-warn: mat-palette($md-warn);
+
+
+$md-theme: mat-light-theme($md-palette-primary, $md-palette-warn, $my-custom-warn);
+@include angular-material-theme($md-theme);
+
+//@include angular-material-theme($theme);
+
+.mat-tab-label {
+    color: #242b46;
+    font-family: 'Rubik', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+    .mat-tab-label-content {
+      color: #242b46;
+      &:hover {
+        color: #f95656;
+      }
+      &:hover {
+        color: #f95656;
+      }
+    }
+  }
+  
+  .mat-tab-label-active {
+    .mat-tab-label-content {
+     color: #242b46;
+     font-weight: 500;
+    }
+    
+  }
+  .mat-tab-body.mat-tab-body-active {
+    height: 500px !important;
+  }
+  .mat-tab-group {
+    width: 100%;
+}
+.mat-tab-header, .mat-tab-nav-bar {
+  border-bottom: none;
+}
+mat-card.download-card.mat-card {
+  -webkit-box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.37);
+  box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.22);
+  border-radius: 13px;
+}
+.mat-card-header .mat-card-title {
+  color: #242b46;
+  font-weight: 500;
+  font-family: 'Rubik', sans-serif;
+}
+.mat-card-actions, .mat-card-content, .mat-card-subtitle {
+  font-family: 'Rubik', sans-serif;
+  color: #242b46;
+  text-align: center;
+}
+.mat-expansion-panel {
+  box-shadow: none !important;
+  //border-top: 1px solid rgba(147, 155, 185, 0.4);
+  border-bottom: 1px solid rgba(147, 155, 185, 0.4);
+  border-radius: 0 !important;
+  &:first-of-type {
+    border-top: 1px solid rgba(147, 155, 185, 0.4);
+  }
+}

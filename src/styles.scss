@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+@import 'variables';
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: 'Rubik', "Helvetica Neue", sans-serif; }
+
+
+p {
+  //background-color: map_get($mat-myapp-primary);
+  font-family: 'Rubik', sans-serif;
+  font-size: $font_size;
+  color: $grayish_blue;
+}
+button {
+  margin: 20px;
+}
+.responsive-image {
+  width: 100%;
+  height: auto;
+}

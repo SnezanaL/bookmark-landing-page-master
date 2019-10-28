@@ -1,0 +1,135 @@
+@import 'variables';
+
+h3 {
+  font-size: 36px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 500;
+  margin: 25px 0 ;
+  color: $very_darkblue;
+}
+h4 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 25px 0 ;
+  color: $very_darkblue;
+}
+button {
+  margin: 20px 20px 20px 0;
+  padding: 0 30px;
+  -webkit-box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.37);
+    box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.37) !important;
+  &:hover {
+    background: #fff;
+  }
+  
+}
+button.mat-raised-button.mat-button-base.mat-primary {
+  border: 1px solid $soft_blue;
+  color: #fff;
+  &:hover {
+    border: 1px solid $soft_blue;
+    color: $soft_blue;
+  }
+}
+button.mat-raised-button.mat-button-base {
+  border: 1px solid transparent;
+  color: $very_darkblue;
+  &:hover {
+    border: 1px solid $very_darkblue;
+    color: $very_darkblue;
+  }
+}
+.header-section {
+  position: relative;
+  height: 520px;
+  @media only screen and (max-width: 769px) {
+    height: 750px;
+  }
+  .hero-content {
+    margin-top: 70px;
+    @media only screen and (max-width: 769px) {
+      top: 415px;
+    }
+    @media only screen and (max-width: 669px) {
+      top: 385px;
+    }
+    @media only screen and (max-width: 569px) {
+      top: 315px;
+    }
+    @media only screen and (max-width: 469px) {
+      top: 281px;
+    }
+  }
+}
+.image-layout-right {
+  position: absolute;
+  margin-bottom: 50px;
+  width: 50%;
+  top: 0;
+  right: 0;
+  @media only screen and (max-width: 769px) {
+    width: 80%;
+    right: 12%;
+  }
+  &::after {
+    content: "";
+    background-color: $soft_blue;
+    width: 70%;
+    height: 69%;
+    position: absolute;
+    top: 34%;
+    right: 0px;
+    z-index: -100;
+    border-radius: 0 0 0 132px;;
+  }
+}
+
+.features-tabs {
+  margin: 30px 0;
+  .image-layout-left {
+    position: absolute;
+    margin-bottom: 50px;
+    width: 45%;
+    top: 0;
+    left: 0px;
+    margin: 50px 30px;
+    @media only screen and (max-width: 769px) {
+      width: 80%;
+      right: 12%;
+    }
+    &::after {
+      content: "";
+      content: "";
+      background-color: #5368df;
+      width: 77%;
+      height: 69%;
+      position: absolute;
+      top: 34%;
+      left: -30px;
+      z-index: -100;
+      border-radius: 0 0 132px 0;
+    }
+  }
+  .hero-content {
+    margin-top: 50px;
+  }
+
+}
+
+.download-card {
+  .download-img {
+    margin: 35px auto;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .dot-img {
+    width: 108%;
+    left: -12px;
+    position: relative;
+  }
+}
+

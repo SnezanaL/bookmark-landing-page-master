@@ -180,6 +180,12 @@ $md-theme: mat-light-theme($md-palette-primary, $md-palette-warn, $my-custom-war
   }
   .mat-tab-body.mat-tab-body-active {
     height: 500px !important;
+    @media only screen and (max-width: 769px) {
+      height: 565px !important;
+    }
+    @media only screen and (max-width: 569px) {
+      height: 570pxpx !important;
+    }
   }
   .mat-tab-group {
     width: 100%;
@@ -210,4 +216,44 @@ mat-card.download-card.mat-card {
   &:first-of-type {
     border-top: 1px solid rgba(147, 155, 185, 0.4);
   }
+}
+mat-panel-title.mat-expansion-panel-header-title {
+  font-size: 17px;
+  font-family: "Rubik", sans-serif;
+  color: #242b46;
+  font-weight: 500;
+  &:hover {
+    color: #f95656;
+  }
+}
+.mat-expansion-panel-header {
+  &:hover {
+    background: transparent !important;
+  }
+}
+.mat-expansion-panel-body {
+  p {
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    color: #5a5b60;
+    font-weight: 400;
+    line-height: 26px;
+  }
+}
+.error-message {
+  background: #f44336;
+  color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 6px 4px;
+  margin-top: -4px !important;
+  position: relative;
+  top: 0px;
+  width: 100% !important;
+  display: block;
+  font-size: 13px;
+  padding-left: 9px;
+  z-index: 1;
+}
+.mat-tab-label .mat-tab-label-content {
+  transition: all 300ms;
 }

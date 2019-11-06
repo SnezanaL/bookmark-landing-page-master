@@ -1,0 +1,60 @@
+@import 'variables';
+
+.features-tabs {
+  margin: 30px 0;
+  .image-layout-left {
+    position: absolute;
+    margin-bottom: 50px;
+    width: 45%;
+    top: 0;
+    left: 0px;
+    margin: 50px 30px;
+    @media only screen and (max-width: 769px) {
+      width: 80%;
+      right: 12%;
+    }
+    &::after {
+      content: "";
+      background-color: #5368df;
+      width: 77%;
+      height: 83%;
+      position: absolute;
+      top: 28%;
+      left: -30px;
+      z-index: -100;
+      border-radius: 0 0 132px 0;
+    }
+  }
+  .hero-content {
+    margin-top: 100px;
+    padding-left: 60px;
+    @media only screen and (max-width: 769px) {
+      top: 415px;
+      margin-top: 0px;
+      padding-left: 15px;
+      text-align: center;
+    }
+    @media only screen and (max-width: 669px) {
+      top: 385px;
+      margin-top: 0px;
+    }
+    @media only screen and (max-width: 569px) {
+      top: 315px;
+      margin-top: 0px;
+    }
+    @media only screen and (max-width: 469px) {
+      top: 280px;
+      margin-top: 0px;
+    }
+  }
+  .responsive-image {
+    width: 77%;
+    height: auto;
+    position: relative;
+    display: block;
+    margin-top: 0px;
+    /* margin-right: 20px; */
+    /* margin-bottom: 30px; */
+    margin-left: 14%;
+  }
+}

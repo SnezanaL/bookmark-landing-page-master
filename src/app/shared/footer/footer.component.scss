@@ -1,0 +1,54 @@
+@import 'variables';
+
+.footer {
+  background: $very_darkblue;
+  padding: 13px 0; 
+  @media only screen and (max-width: 769px) {
+   .nav-item {
+     width: 100%;
+     text-align: center;
+   }
+   .logo {
+    margin: 20px 0;
+   }
+  }
+  .nav-link {
+    color:#fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2px;
+    transition: all 400ms;
+    text-transform: uppercase;
+    &:hover{
+      color: $soft_red;
+    }    
+  }
+  .social {
+    justify-content: flex-end;
+    
+    @media only screen and (max-width: 769px) {
+      justify-content: center;
+      margin: 20px 0;
+    }
+    .nav-item {
+      display: inline-flex;
+    }
+  }
+  .nav-link.social-icon {
+    transition: all 400ms;
+    path {
+      fill: #fff;
+      transition: all 400ms;
+      &:hover{
+        fill: $soft_red;
+      } 
+    }
+    &:hover{
+      path {
+        fill: $soft_red;  
+      }
+    }
+  }
+}

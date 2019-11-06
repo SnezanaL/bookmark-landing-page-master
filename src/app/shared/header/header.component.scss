@@ -3,6 +3,13 @@
 .header {
   margin-top: 30px;
   margin-bottom:  80px;
+  @media only screen and (max-width: 600px) {
+    margin-top: 0px;
+  }
+}
+.navbar-expand-lg {
+  //background: red;
+  transition: all 500ms ease-in;
 }
 
 li.nav-item {
@@ -19,24 +26,26 @@ li.nav-item {
     .active {
       color: $soft_red;
     }
-  }
-  
+  }  
 }
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
   color: $soft_red;
 }
-
 li.nav-item.btn-login {
   margin-left: 20px;
-
-  a{
+  a {
     color: #fff;
     font-size: 13px;
     padding: 0 30px;
-  }
-  
+    border: 1px solid #f95656;
+    transition: all 400ms;
+    &:hover {
+      border: 1px solid #f95656;
+      color: #f95656;
+      background: #fff;
+    }
+  }  
 }
-
 .example-container {
   width: 500px;
   height: 300px;
@@ -52,4 +61,95 @@ li.nav-item.btn-login {
 
 .example-sidenav {
   padding: 20px;
+}
+.navbar-light .navbar-toggler-icon {
+  background-image: url('/assets/icons/icon-hamburger.svg');
+ 
+}
+.navbar-light {
+  .logo {
+    background-image: url('/assets/icons/logo-bookmark.svg');
+    width: 150px;
+    height: 26px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+}
+
+.navbar-toggler-icon {
+  width: 1.3em;
+  height: 1.2em;
+  background-size: 90% 90%;
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+.container {
+  @media only screen and (max-width: 768px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url('/assets/icons/icon-close.svg');
+  }
+  .navbar-dark {
+    background-color: hsla(229, 31%, 21%, 0.9);
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    width: 100%;
+    left: 0;
+    .logo {
+      background-image: url('/assets/icons/logo-bookmark-ww.svg');
+      width: 150px;
+      height: 26px;
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+      background-size: auto;
+    }
+    .collapse.navbar-collapse.show {
+      text-align: center;
+      border-top: 2px solid rgba(164, 164, 164, 0.37);
+      margin: 0 10px;
+      
+    }
+    li.nav-item {
+      margin-right: 0;
+      border-bottom: 2px solid rgba(164, 164, 164, 0.37);
+      padding: 8px 0;
+      .nav-link {
+        color: #fff;
+        font-size: 15px;
+      }
+    }
+    li.nav-item.btn-login {
+      border-bottom: none !important;
+      margin-left: 0 !important;
+      a.nav-link.mat-flat-button.mat-button-base.mat-warn {
+        width: 100%;
+        background: transparent;
+        border: 2px solid #ffffff !important;
+        padding: 2px !important;
+      }
+    }
+    li.nav-item.soc-icons {
+      border-bottom: none !important;
+      a {
+        margin-top: 120px;
+        margin-bottom: 20px;
+        padding: 0 15px !important;
+      }
+    }
+    .mt-2, .my-2 {
+      margin-top: 0 !important;
+    }
+  }
 }

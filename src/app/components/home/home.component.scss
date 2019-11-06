@@ -17,16 +17,18 @@ h4 {
 button {
   margin: 20px 20px 20px 0;
   padding: 0 30px;
-  -webkit-box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.37);
-    box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.37) !important;
   &:hover {
     background: #fff;
   }
-  
+}
+.mat-raised-button {
+  -webkit-box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.37);
+  box-shadow: 1px 4px 10px -2px rgba(0, 0, 0, 0.37) !important;
 }
 button.mat-raised-button.mat-button-base.mat-primary {
   border: 1px solid $soft_blue;
   color: #fff;
+  transition: all 400ms;
   &:hover {
     border: 1px solid $soft_blue;
     color: $soft_blue;
@@ -35,6 +37,7 @@ button.mat-raised-button.mat-button-base.mat-primary {
 button.mat-raised-button.mat-button-base {
   border: 1px solid transparent;
   color: $very_darkblue;
+  transition: all 400ms;
   &:hover {
     border: 1px solid $very_darkblue;
     color: $very_darkblue;
@@ -45,6 +48,7 @@ button.mat-raised-button.mat-button-base {
   height: 520px;
   @media only screen and (max-width: 769px) {
     height: 750px;
+    text-align: center;
   }
   .hero-content {
     margin-top: 70px;
@@ -84,39 +88,16 @@ button.mat-raised-button.mat-button-base {
     border-radius: 0 0 0 132px;;
   }
 }
-
-.features-tabs {
-  margin: 30px 0;
-  .image-layout-left {
-    position: absolute;
-    margin-bottom: 50px;
-    width: 45%;
-    top: 0;
-    left: 0px;
-    margin: 50px 30px;
-    @media only screen and (max-width: 769px) {
-      width: 80%;
-      right: 12%;
-    }
-    &::after {
-      content: "";
-      content: "";
-      background-color: #5368df;
-      width: 77%;
-      height: 69%;
-      position: absolute;
-      top: 34%;
-      left: -30px;
-      z-index: -100;
-      border-radius: 0 0 132px 0;
-    }
-  }
-  .hero-content {
-    margin-top: 50px;
-  }
-
+.features {
+  margin-top:70px;
 }
-
+.download {
+  .content {
+    @media only screen and (max-width: 769px) {
+      text-align: center;
+    }
+  }
+}
 .download-card {
   .download-img {
     margin: 35px auto;
@@ -132,4 +113,72 @@ button.mat-raised-button.mat-button-base {
     position: relative;
   }
 }
-
+.faqs {
+  margin: 60px 0 30px;
+}
+.questions {
+  .content {
+    @media only screen and (max-width: 769px) {
+      text-align: center;
+    }
+  }
+}
+.join-us {
+  margin-top: 80px;
+  padding: 50px 0;
+  background-color: $soft_blue;
+  color: #fff;
+  h5 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 4px;
+  }
+  h4 {
+    color: #fff;
+  } 
+  .mat-flat-button {
+    margin: 0 0 0 30px;
+    color: #fff;
+    padding: 0 18px;
+    border: 1px solid #f95656;
+    transition: all 600ms;
+    &:hover {
+      border: 1px solid #f95656;
+      color: #f95656;
+    }
+    @media only screen and (max-width: 769px) {
+      width: 100%;
+      margin: 20px 0;
+    }
+  }
+  input {
+    border-radius: 5px;
+    border: 1px solid #5368df;
+    padding: 5px 4px 5px 8px;
+    margin-top: 1px;
+    width: 100%;
+    z-index: 3;
+    position: relative;
+  }
+  .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    //margin-right: -5px;
+    //margin-left: -5px;
+    margin: 0 30px 0 50px;
+    /* position: relative; */
+  }
+  .button {
+    &:hover {
+      //background: red;
+      border: 1px solid red;
+    }
+  }
+  .was-validated .form-control:invalid, .form-control.is-invalid {
+    border-color: #dc3545;
+    padding-right: calc(1.5em + 0.75rem);
+    background-image: url("./../../../assets/icons/exclamation-mark-svgrepo-com.svg");
+    border: 1px solid red;
+}
+}
